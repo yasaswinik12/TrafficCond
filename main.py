@@ -17,7 +17,7 @@ DB_HOST = 'localhost'
 DB_PORT = 5432
 DB_NAME = 'postgres'
 DB_USER = 'postgres'
-DB_PASSWORD = '1612'
+DB_PASSWORD = 'password'
 
 UPDATE_TIME = 15
 
@@ -140,7 +140,7 @@ def create_database():
 
 
 def main():
-    log_folder = "/home/yk9253/ctr/trafficCond/aus/logs"
+    log_folder = "folder_to_save_the_logs"
     pathlib.Path(log_folder).mkdir(exist_ok=True)
     file_name = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".log"
 
